@@ -29,8 +29,8 @@ export default function LandingQuironValles() {
   },
   {
     name: 'Dra. Laia Fité',
-    img: '/doctors/laia-fite.jpg',
-    bio: 'Cirujana especializada en cirugía oral y maxilofacial. Aquí se puede añadir una breve biografía profesional, formación y áreas de especial interés.'
+    img: '/doctors/fite.jpg',
+    bio: 'Cirujana especializada en cirugía oral y maxilofacial. Licenciada en Medicina y Cirugía, especialista vía MIR en Cirugía Oral y Maxilofacial en el Hospital Vall d’Hebron de Barcelona. Desde 2019 combina la actividad sanitaria pública en el Hospital Parc Taulí de Sabadell con la práctica privada. Formada en patología de glándulas salivales, patología infantil, cirugía del sueño, así como implantología y cirugía oral.'
   },
   {
     name: 'Dr. Nil Valentínes',
