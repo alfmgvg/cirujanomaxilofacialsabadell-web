@@ -157,7 +157,6 @@ export default function LandingQuironValles() {
           <div className="max-w-3xl">
             <h2 className="text-3xl font-bold tracking-tight">Qué tratamos</h2>
             <p className="mt-4 text-lg leading-8 text-slate-700">
-              La página está enfocada a problemas frecuentes y con alta intención de búsqueda, pero transmitiendo también experiencia en cirugía oral compleja.
             </p>
           </div>
           <div className="mt-10 grid gap-6 md:grid-cols-3">
@@ -176,7 +175,7 @@ export default function LandingQuironValles() {
           <div>
             <h2 className="text-3xl font-bold tracking-tight">Equipo de cirujanos maxilofaciales</h2>
             <p className="mt-4 text-lg leading-8 text-slate-700">
-              Equipo de cirugía oral y maxilofacial con experiencia en cirugía de cordales incluidos, implantes dentales y tratamiento de patología oral compleja. El Dr. Alfonso Mogedas Vegara es el jefe de servicio y cirujano maxilofacial responsable de la unidad. Parte de la experiencia clínica del equipo procede también de la actividad desarrollada en MaxDental Vallès, centrada en cirugía oral avanzada e implantología. A continuación puedes añadir fotografías reales y una breve presentación individual de cada profesional.
+              Equipo de cirugía oral y maxilofacial con experiencia en cirugía de cordales incluidos, implantes dentales y tratamiento de patología oral compleja. El Dr. Alfonso Mogedas Vegara es el jefe de servicio y cirujano maxilofacial responsable de la unidad. Parte de la experiencia clínica del equipo procede también de la actividad desarrollada en MaxDental Vallès, centrada en cirugía oral avanzada e implantología.
             </p>
             <div className="mt-8 grid gap-4 sm:grid-cols-2">
               {doctors.map((doctor) => (
