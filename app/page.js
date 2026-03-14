@@ -29,8 +29,8 @@ export default function LandingQuironValles() {
   },
   {
     name: 'Dra. Laia Fité',
-    img: '/doctors/fite.jpg',
-    bio: 'Cirujana especializada en cirugía oral y maxilofacial. Licenciada en Medicina y Cirugía, especialista vía MIR en Cirugía Oral y Maxilofacial en el Hospital Vall d’Hebron de Barcelona. Desde 2019 combina la actividad sanitaria pública en el Hospital Parc Taulí de Sabadell con la práctica privada. Formada en patología de glándulas salivales, patología infantil, cirugía del sueño, así como implantología y cirugía oral.'
+    img: '/doctors/laia-fite.jpg',
+    bio: 'Cirujana especializada en cirugía oral y maxilofacial. Aquí se puede añadir una breve biografía profesional, formación y áreas de especial interés.'
   },
   {
     name: 'Dr. Nil Valentínes',
@@ -62,7 +62,7 @@ export default function LandingQuironValles() {
 
   return (
     <>
-      <header className="w-full border-b border-slate-200 bg-white">
+      <header className="w-full border-b border-cyan-100 bg-white">
         <div className="mx-auto max-w-6xl px-6 py-4 flex items-center justify-between gap-4">
           <div className="flex items-center gap-4">
             <img src="/logo-ocm.png" alt="Odontología Cirugía Maxilofacial" className="h-12 w-auto" />
@@ -73,14 +73,14 @@ export default function LandingQuironValles() {
           </div>
         </div>
       </header>
-      <main className="min-h-screen bg-white text-slate-900">
-      <section className="bg-slate-50 border-b border-slate-200">
+      <main className="min-h-screen bg-white text-cyan-900">
+      <section className="bg-cyan-50 border-b border-cyan-100">
         <div className="mx-auto max-w-6xl px-6 py-16 lg:py-24 grid gap-10 lg:grid-cols-2 lg:items-center">
           <div>
             <span className="inline-flex rounded-full border border-slate-300 px-4 py-1 text-sm font-medium text-slate-700">
               Cirugía Oral y Maxilofacial · Hospital Quirónsalud del Vallès
             </span>
-            <h1 className="mt-5 text-4xl font-bold tracking-tight text-slate-900 lg:text-5xl">
+            <h1 className="mt-5 text-4xl font-bold tracking-tight text-cyan-900 lg:text-5xl">
               Especialistas en muelas del juicio, cirugía oral compleja e implantes dentales en Sabadell
             </h1>
             <p className="mt-5 text-lg leading-8 text-slate-700">
@@ -90,19 +90,19 @@ export default function LandingQuironValles() {
             <div className="mt-8 flex flex-wrap gap-4">
               <a
                 href="https://www.quironsalud.com/valles/es/cita-medica#r!/n!/29?dir=next"
-                className="rounded-2xl bg-slate-900 px-6 py-3 text-sm font-semibold text-white shadow-sm transition hover:opacity-90"
+                className="rounded-2xl bg-cyan-600 px-6 py-3 text-sm font-semibold text-white shadow-sm transition hover:opacity-90"
               >
                 Pedir cita
               </a>
               <a
                 href="tel:+34679176144"
-                className="rounded-2xl border border-slate-300 px-6 py-3 text-sm font-semibold text-slate-900 transition hover:bg-slate-100"
+                className="rounded-2xl border border-slate-300 px-6 py-3 text-sm font-semibold text-cyan-900 transition hover:bg-cyan-100"
               >
                 Llamar al 679 176 144
               </a>
               <a
                 href="https://wa.me/34679176144"
-                className="rounded-2xl border border-slate-300 px-6 py-3 text-sm font-semibold text-slate-900 transition hover:bg-slate-100"
+                className="rounded-2xl border border-slate-300 px-6 py-3 text-sm font-semibold text-cyan-900 transition hover:bg-cyan-100"
               >
                 WhatsApp
               </a>
@@ -113,7 +113,7 @@ export default function LandingQuironValles() {
           </div>
 
           <div className="grid gap-4 sm:grid-cols-2">
-            <div className="rounded-3xl border border-slate-200 bg-white p-6 shadow-sm sm:col-span-2">
+            <div className="rounded-3xl border border-cyan-100 bg-white p-6 shadow-sm sm:col-span-2">
               <p className="text-sm font-semibold uppercase tracking-wide text-slate-500">Tratamientos destacados</p>
               <ul className="mt-4 space-y-3 text-slate-700">
                 <li>• Extracción de muelas del juicio complejas</li>
@@ -123,11 +123,11 @@ export default function LandingQuironValles() {
                 <li>• Rehabilitación de casos complejos</li>
               </ul>
             </div>
-            <div className="rounded-3xl border border-slate-200 bg-white p-6 shadow-sm">
+            <div className="rounded-3xl border border-cyan-100 bg-white p-6 shadow-sm">
               <p className="text-3xl font-bold">1ª planta</p>
               <p className="mt-2 text-slate-600">Ubicación de la consulta en el hospital</p>
             </div>
-            <div className="rounded-3xl border border-slate-200 bg-white p-6 shadow-sm">
+            <div className="rounded-3xl border border-cyan-100 bg-white p-6 shadow-sm">
               <p className="text-3xl font-bold">Sabadell</p>
               <p className="mt-2 text-slate-600">Fácil acceso para pacientes del Vallès</p>
             </div>
@@ -145,24 +145,24 @@ export default function LandingQuironValles() {
         </div>
         <div className="mt-8 flex flex-wrap gap-3">
           {nearbyCities.map((city) => (
-            <span key={city} className="rounded-full bg-slate-100 px-4 py-2 text-sm text-slate-700">
+            <span key={city} className="rounded-full bg-cyan-100 px-4 py-2 text-sm text-slate-700">
               {city}
             </span>
           ))}
         </div>
       </section>
 
-      <section className="bg-slate-50 border-y border-slate-200">
+      <section className="bg-cyan-50 border-y border-cyan-100">
         <div className="mx-auto max-w-6xl px-6 py-16">
           <div className="max-w-3xl">
             <h2 className="text-3xl font-bold tracking-tight">Qué tratamos</h2>
             <p className="mt-4 text-lg leading-8 text-slate-700">
-              
+              La página está enfocada a problemas frecuentes y con alta intención de búsqueda, pero transmitiendo también experiencia en cirugía oral compleja.
             </p>
           </div>
           <div className="mt-10 grid gap-6 md:grid-cols-3">
             {treatments.map((item) => (
-              <article key={item.title} className="rounded-3xl border border-slate-200 bg-white p-6 shadow-sm">
+              <article key={item.title} className="rounded-3xl border border-cyan-100 bg-white p-6 shadow-sm">
                 <h3 className="text-xl font-semibold">{item.title}</h3>
                 <p className="mt-3 leading-7 text-slate-700">{item.text}</p>
               </article>
@@ -180,7 +180,7 @@ export default function LandingQuironValles() {
             </p>
             <div className="mt-8 grid gap-4 sm:grid-cols-2">
               {doctors.map((doctor) => (
-                <div key={doctor.name} className="rounded-3xl border border-slate-200 p-5 shadow-sm">
+                <div key={doctor.name} className="rounded-3xl border border-cyan-100 p-5 shadow-sm">
                   <img src={doctor.img} alt={doctor.name} className="mb-4 aspect-[4/3] w-full object-cover rounded-2xl" />
                   <h3 className="text-lg font-semibold">{doctor.name}</h3>
                   <p className="mt-2 text-sm leading-6 text-slate-600">
@@ -191,7 +191,7 @@ export default function LandingQuironValles() {
             </div>
           </div>
 
-          <div className="rounded-3xl border border-slate-200 bg-slate-50 p-8 shadow-sm">
+          <div className="rounded-3xl border border-cyan-100 bg-cyan-50 p-8 shadow-sm">
             <h2 className="text-3xl font-bold tracking-tight">Dónde estamos</h2>
             <p className="mt-4 text-lg leading-8 text-slate-700">
               Hospital Quirónsalud del Vallès<br />
@@ -222,7 +222,7 @@ export default function LandingQuironValles() {
         </div>
       </section>
 
-      <section className="bg-slate-50 border-y border-slate-200">
+      <section className="bg-cyan-50 border-y border-cyan-100">
         <div className="mx-auto max-w-6xl px-6 py-16">
           <div className="max-w-3xl">
             <h2 className="text-3xl font-bold tracking-tight">Implantes dentales en Sabadell</h2>
@@ -283,25 +283,25 @@ export default function LandingQuironValles() {
           Para pacientes que desean conocer más detalles sobre los tratamientos más frecuentes de cirugía oral, hemos preparado páginas específicas con información ampliada.
         </p>
         <div className="mt-8 grid gap-6 md:grid-cols-2">
-          <a href="/muelas-del-juicio-sabadell" className="block rounded-3xl border border-slate-200 p-6 hover:shadow-md transition">
+          <a href="/muelas-del-juicio-sabadell" className="block rounded-3xl border border-cyan-100 p-6 hover:shadow-md transition">
             <h3 className="text-xl font-semibold">Extracción de muelas del juicio en Sabadell</h3>
             <p className="mt-3 text-slate-700">
               Información detallada sobre cordales incluidos, síntomas frecuentes, cuándo es recomendable la extracción y cómo es el proceso de recuperación.
             </p>
-            <span className="mt-4 inline-block text-sm font-semibold text-slate-900">Ver información completa →</span>
+            <span className="mt-4 inline-block text-sm font-semibold text-cyan-900">Ver información completa →</span>
           </a>
 
-          <a href="/implantes-dentales-sabadell" className="block rounded-3xl border border-slate-200 p-6 hover:shadow-md transition">
+          <a href="/implantes-dentales-sabadell" className="block rounded-3xl border border-cyan-100 p-6 hover:shadow-md transition">
             <h3 className="text-xl font-semibold">Implantes dentales en Sabadell</h3>
             <p className="mt-3 text-slate-700">
               Explicación completa sobre el tratamiento con implantes dentales, planificación quirúrgica, casos complejos y resultados esperables.
             </p>
-            <span className="mt-4 inline-block text-sm font-semibold text-slate-900">Ver información completa →</span>
+            <span className="mt-4 inline-block text-sm font-semibold text-cyan-900">Ver información completa →</span>
           </a>
         </div>
       </section>
 
-      <section className="bg-slate-900 text-white">
+      <section className="bg-cyan-600 text-white">
         <div className="mx-auto max-w-6xl px-6 py-16 text-center">
           <h2 className="text-3xl font-bold tracking-tight lg:text-4xl">
             ¿Tienes dolor por una muela del juicio o necesitas valorar implantes dentales?
@@ -312,7 +312,7 @@ export default function LandingQuironValles() {
           <div className="mt-8 flex flex-wrap justify-center gap-4">
             <a
               href="https://www.quironsalud.com/valles/es/cita-medica#r!/n!/29?dir=next"
-              className="rounded-2xl bg-white px-6 py-3 text-sm font-semibold text-slate-900 shadow-sm transition hover:opacity-90"
+              className="rounded-2xl bg-white px-6 py-3 text-sm font-semibold text-cyan-900 shadow-sm transition hover:opacity-90"
             >
               Pedir cita online
             </a>
@@ -344,7 +344,7 @@ export default function LandingQuironValles() {
 
 export function MuelasJuicioSabadell() {
   return (
-    <main className="min-h-screen bg-white text-slate-900">
+    <main className="min-h-screen bg-white text-cyan-900">
       <section className="mx-auto max-w-4xl px-6 py-16">
         <h1 className="text-4xl font-bold">Extracción de muelas del juicio en Sabadell</h1>
         <p className="mt-6 text-lg text-slate-700">
@@ -377,7 +377,7 @@ export function MuelasJuicioSabadell() {
         </p>
 
         <div className="mt-12">
-          <a href="https://www.quironsalud.com/valles/es/cita-medica#r!/n!/29?dir=next" className="rounded-xl bg-slate-900 text-white px-6 py-3">
+          <a href="https://www.quironsalud.com/valles/es/cita-medica#r!/n!/29?dir=next" className="rounded-xl bg-cyan-600 text-white px-6 py-3">
             Pedir cita en Quirónsalud del Vallès
           </a>
         </div>
@@ -393,7 +393,7 @@ export function MuelasJuicioSabadell() {
 
 export function ImplantesDentalesSabadell() {
   return (
-    <main className="min-h-screen bg-white text-slate-900">
+    <main className="min-h-screen bg-white text-cyan-900">
       <section className="mx-auto max-w-4xl px-6 py-16">
         <h1 className="text-4xl font-bold">Implantes dentales en Sabadell</h1>
 
@@ -426,7 +426,7 @@ export function ImplantesDentalesSabadell() {
         </p>
 
         <div className="mt-12">
-          <a href="https://www.quironsalud.com/valles/es/cita-medica#r!/n!/29?dir=next" className="rounded-xl bg-slate-900 text-white px-6 py-3">
+          <a href="https://www.quironsalud.com/valles/es/cita-medica#r!/n!/29?dir=next" className="rounded-xl bg-cyan-600 text-white px-6 py-3">
             Pedir cita en Quirónsalud del Vallès
           </a>
         </div>
@@ -441,7 +441,7 @@ export function ImplantesDentalesSabadell() {
 
 export function BlogDolorMuelaJuicio() {
   return (
-    <main className="min-h-screen bg-white text-slate-900">
+    <main className="min-h-screen bg-white text-cyan-900">
       <section className="mx-auto max-w-4xl px-6 py-16">
         <h1 className="text-4xl font-bold">Dolor de muela del juicio: cuándo acudir al cirujano maxilofacial</h1>
 
@@ -476,7 +476,7 @@ export function BlogDolorMuelaJuicio() {
 
 export function BlogRecuperacionCordal() {
   return (
-    <main className="min-h-screen bg-white text-slate-900">
+    <main className="min-h-screen bg-white text-cyan-900">
       <section className="mx-auto max-w-4xl px-6 py-16">
         <h1 className="text-4xl font-bold">¿Cuánto tarda la recuperación de una muela del juicio?</h1>
 
@@ -508,7 +508,7 @@ export function BlogRecuperacionCordal() {
 
 export function LandingQuironVallesCAT() {
   return (
-    <main className="min-h-screen bg-white text-slate-900">
+    <main className="min-h-screen bg-white text-cyan-900">
       <section className="mx-auto max-w-4xl px-6 py-16">
         <h1 className="text-4xl font-bold">Cirurgià maxil·lofacial a Sabadell</h1>
 
@@ -532,7 +532,7 @@ export function LandingQuironVallesCAT() {
         </p>
 
         <div className="mt-10">
-          <a href="https://www.quironsalud.com/valles/es/cita-medica#r!/n!/29?dir=next" className="rounded-xl bg-slate-900 text-white px-6 py-3">
+          <a href="https://www.quironsalud.com/valles/es/cita-medica#r!/n!/29?dir=next" className="rounded-xl bg-cyan-600 text-white px-6 py-3">
             Demanar visita
           </a>
         </div>
@@ -547,7 +547,7 @@ export function LandingQuironVallesCAT() {
 
 export function BlogDuracionImplante() {
   return (
-    <main className="min-h-screen bg-white text-slate-900">
+    <main className="min-h-screen bg-white text-cyan-900">
       <section className="mx-auto max-w-4xl px-6 py-16">
         <h1 className="text-4xl font-bold">¿Cuánto dura un implante dental?</h1>
 
