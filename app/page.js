@@ -157,7 +157,7 @@ export default function LandingQuironValles() {
           <div className="max-w-3xl">
             <h2 className="text-3xl font-bold tracking-tight">Qué tratamos</h2>
             <p className="mt-4 text-lg leading-8 text-slate-700">
-              La página está enfocada a problemas frecuentes y con alta intención de búsqueda, pero transmitiendo también experiencia en cirugía oral compleja.
+              
             </p>
           </div>
           <div className="mt-10 grid gap-6 md:grid-cols-3">
