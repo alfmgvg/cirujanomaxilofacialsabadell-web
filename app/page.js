@@ -55,6 +55,7 @@ export default function LandingQuironValles() {
     'Sant Cugat del Vallès',
     'Rubí',
     'Cerdanyola del Vallès',
+    'Barcelona',
     'Barberà del Vallès',
     'Castellar del Vallès',
     'Sant Quirze del Vallès',
