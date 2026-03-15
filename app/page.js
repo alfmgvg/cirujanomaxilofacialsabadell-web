@@ -33,6 +33,7 @@ export default function LandingQuironValles() {
       'Barberà del Vallès',
       'Castellar del Vallès',
       'Sant Quirze del Vallès',
+      'Barcelona'
     ],
     sameAs: ['https://www.quironsalud.com/valles/es/cita-medica#r!/n!/29?dir=next'],
   };
@@ -60,7 +61,7 @@ export default function LandingQuironValles() {
   {
     name: 'Dra. Laia Fité',
     img: '/doctors/laia-fite.jpg',
-    bio: 'Cirujana especializada en cirugía oral y maxilofacial. Aquí se puede añadir una breve biografía profesional, formación y áreas de especial interés.'
+    bio: 'Cirujana especializada en cirugía oral y maxilofacial. Licenciada en Medicina y Cirugía, especialista vía MIR en Cirugía Oral y Maxilofacial en el Hospital Vall d’Hebron de Barcelona. Desde 2019 combina la actividad sanitaria pública en el Hospital Parc Taulí de Sabadell con la práctica privada. Formada en patología de glándulas salivales, patología infantil, cirugía del sueño, así como implantología y cirugía oral.'
   },
   {
     name: 'Dr. Nil Valentínes',
@@ -88,6 +89,7 @@ export default function LandingQuironValles() {
     'Barberà del Vallès',
     'Castellar del Vallès',
     'Sant Quirze del Vallès',
+    'Barcelona',
   ];
 
   return (
@@ -191,7 +193,7 @@ export default function LandingQuironValles() {
           <div className="max-w-3xl">
             <h2 className="text-3xl font-bold tracking-tight">Qué tratamos</h2>
             <p className="mt-4 text-lg leading-8 text-slate-700">
-              La página está enfocada a problemas frecuentes y con alta intención de búsqueda, pero transmitiendo también experiencia en cirugía oral compleja.
+              
             </p>
           </div>
           <div className="mt-10 grid gap-6 md:grid-cols-3">
@@ -210,7 +212,7 @@ export default function LandingQuironValles() {
           <div>
             <h2 className="text-3xl font-bold tracking-tight">Equipo de cirujanos maxilofaciales</h2>
             <p className="mt-4 text-lg leading-8 text-slate-700">
-              Equipo de cirugía oral y maxilofacial con experiencia en cirugía de cordales incluidos, implantes dentales y tratamiento de patología oral compleja. El Dr. Alfonso Mogedas Vegara es el jefe de servicio y cirujano maxilofacial responsable de la unidad. Parte de la experiencia clínica del equipo procede también de la actividad desarrollada en MaxDental Vallès, centrada en cirugía oral avanzada e implantología. A continuación puedes añadir fotografías reales y una breve presentación individual de cada profesional.
+              Equipo de cirugía oral y maxilofacial con experiencia en cirugía de cordales incluidos, implantes dentales y tratamiento de patología oral compleja. El Dr. Alfonso Mogedas Vegara es el jefe de servicio y cirujano maxilofacial responsable de la unidad. Parte de la experiencia clínica del equipo procede también de la actividad desarrollada en MaxDental Vallès, centrada en cirugía oral avanzada e implantología. 
             </p>
             <div className="mt-8 grid gap-4 sm:grid-cols-2">
               {doctors.map((doctor) => (
