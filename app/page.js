@@ -121,7 +121,7 @@ export default function LandingQuironValles() {
             </h1>
             <p className="mt-5 text-lg leading-8 text-slate-700">
               Atendemos a pacientes de Sabadell y poblaciones cercanas que necesitan extracción de cordales incluidos,
-              tratamiento de quistes maxilares e implantes dentales, tanto en casos sencillos como complejos.
+              tratamiento de quistes maxilares e implantes dentales, tanto en casos sencillos como complejos.Trabajamos con las mutuas ofrecidas por el hospital QuironSalud del Vallés.
             </p>
             <div className="mt-8 flex flex-wrap gap-4">
               <a
