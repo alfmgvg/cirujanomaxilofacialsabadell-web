@@ -653,4 +653,3 @@ export function BlogDuracionImplante() {
     </main>
   );
 }
-
