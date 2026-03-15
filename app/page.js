@@ -6,6 +6,36 @@
 // "Unidad de Cirugía Oral y Maxilofacial en el Hospital Quirónsalud del Vallès. Especialistas en muelas del juicio, cordales incluidos e implantes dentales en Sabadell y el Vallès."
 
 export default function LandingQuironValles() {
+  const localBusinessSchema = {
+    '@context': 'https://schema.org',
+    '@type': 'Dentist',
+    name: 'Unidad de Cirugía Oral y Maxilofacial - Hospital Quirónsalud del Vallès',
+    description:
+      'Unidad especializada en cirugía oral y maxilofacial en Sabadell. Tratamientos de muelas del juicio, cordales incluidos, quistes maxilares e implantes dentales.',
+    telephone: '+34 679 176 144',
+    url: 'https://cirujanomaxilofacialsabadell.com',
+    image: 'https://cirujanomaxilofacialsabadell.com/logo-ocm.png',
+    medicalSpecialty: 'Oral and Maxillofacial Surgery',
+    address: {
+      '@type': 'PostalAddress',
+      streetAddress: 'Passeig Rubió i Ors, 23',
+      addressLocality: 'Sabadell',
+      addressRegion: 'Barcelona',
+      postalCode: '08203',
+      addressCountry: 'ES',
+    },
+    areaServed: [
+      'Sabadell',
+      'Terrassa',
+      'Sant Cugat del Vallès',
+      'Rubí',
+      'Cerdanyola del Vallès',
+      'Barberà del Vallès',
+      'Castellar del Vallès',
+      'Sant Quirze del Vallès',
+    ],
+    sameAs: ['https://www.quironsalud.com/valles/es/cita-medica#r!/n!/29?dir=next'],
+  };
   const treatments = [
     {
       title: 'Muelas del juicio',
@@ -29,8 +59,8 @@ export default function LandingQuironValles() {
   },
   {
     name: 'Dra. Laia Fité',
-    img: '/doctors/fite.jpg',
-    bio: 'Cirujana especializada en cirugía oral y maxilofacial. Licenciada en Medicina y Cirugía, especialista vía MIR en Cirugía Oral y Maxilofacial en el Hospital Vall d’Hebron de Barcelona. Desde 2019 combina la actividad sanitaria pública en el Hospital Parc Taulí de Sabadell con la práctica privada. Formada en patología de glándulas salivales, patología infantil, cirugía del sueño, así como implantología y cirugía oral.'
+    img: '/doctors/laia-fite.jpg',
+    bio: 'Cirujana especializada en cirugía oral y maxilofacial. Aquí se puede añadir una breve biografía profesional, formación y áreas de especial interés.'
   },
   {
     name: 'Dr. Nil Valentínes',
@@ -55,7 +85,6 @@ export default function LandingQuironValles() {
     'Sant Cugat del Vallès',
     'Rubí',
     'Cerdanyola del Vallès',
-    'Barcelona',
     'Barberà del Vallès',
     'Castellar del Vallès',
     'Sant Quirze del Vallès',
@@ -63,7 +92,11 @@ export default function LandingQuironValles() {
 
   return (
     <>
-      <header className="w-full border-b border-cyan-100 bg-white">
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(localBusinessSchema) }}
+      />
+      <header className="sticky top-0 z-40 w-full border-b border-cyan-100 bg-white/95 backdrop-blur">
         <div className="mx-auto max-w-6xl px-6 py-4 flex items-center justify-between gap-4">
           <div className="flex items-center gap-4">
             <img src="/logo-ocm.png" alt="Odontología Cirugía Maxilofacial" className="h-12 w-auto" />
@@ -74,7 +107,7 @@ export default function LandingQuironValles() {
           </div>
         </div>
       </header>
-      <main className="min-h-screen bg-white text-cyan-900">
+      <main className="min-h-screen bg-white pb-24 text-cyan-900 selection:bg-cyan-100">
       <section className="bg-cyan-50 border-b border-cyan-100">
         <div className="mx-auto max-w-6xl px-6 py-16 lg:py-24 grid gap-10 lg:grid-cols-2 lg:items-center">
           <div>
@@ -91,7 +124,7 @@ export default function LandingQuironValles() {
             <div className="mt-8 flex flex-wrap gap-4">
               <a
                 href="https://www.quironsalud.com/valles/es/cita-medica#r!/n!/29?dir=next"
-                className="rounded-2xl bg-cyan-600 px-6 py-3 text-sm font-semibold text-white shadow-sm transition hover:opacity-90"
+                className="rounded-2xl bg-cyan-600 px-6 py-3 text-sm font-semibold text-white shadow-sm transition hover:bg-cyan-700"
               >
                 Pedir cita
               </a>
@@ -158,6 +191,7 @@ export default function LandingQuironValles() {
           <div className="max-w-3xl">
             <h2 className="text-3xl font-bold tracking-tight">Qué tratamos</h2>
             <p className="mt-4 text-lg leading-8 text-slate-700">
+              La página está enfocada a problemas frecuentes y con alta intención de búsqueda, pero transmitiendo también experiencia en cirugía oral compleja.
             </p>
           </div>
           <div className="mt-10 grid gap-6 md:grid-cols-3">
@@ -176,7 +210,7 @@ export default function LandingQuironValles() {
           <div>
             <h2 className="text-3xl font-bold tracking-tight">Equipo de cirujanos maxilofaciales</h2>
             <p className="mt-4 text-lg leading-8 text-slate-700">
-              Equipo de cirugía oral y maxilofacial con experiencia en cirugía de cordales incluidos, implantes dentales y tratamiento de patología oral compleja. El Dr. Alfonso Mogedas Vegara es el jefe de servicio y cirujano maxilofacial responsable de la unidad. Parte de la experiencia clínica del equipo procede también de la actividad desarrollada en MaxDental Vallès, centrada en cirugía oral avanzada e implantología.
+              Equipo de cirugía oral y maxilofacial con experiencia en cirugía de cordales incluidos, implantes dentales y tratamiento de patología oral compleja. El Dr. Alfonso Mogedas Vegara es el jefe de servicio y cirujano maxilofacial responsable de la unidad. Parte de la experiencia clínica del equipo procede también de la actividad desarrollada en MaxDental Vallès, centrada en cirugía oral avanzada e implantología. A continuación puedes añadir fotografías reales y una breve presentación individual de cada profesional.
             </p>
             <div className="mt-8 grid gap-4 sm:grid-cols-2">
               {doctors.map((doctor) => (
@@ -198,9 +232,27 @@ export default function LandingQuironValles() {
               Passeig Rubió i Ors, 23<br />
               08203 Sabadell, Barcelona
             </p>
-            <div className="mt-6 aspect-video rounded-2xl bg-slate-200 flex items-center justify-center text-sm text-slate-600 text-center px-6">
-              Aquí se puede incrustar un mapa de Google Maps o una imagen del acceso al hospital
+            <div className="mt-6 overflow-hidden rounded-2xl border border-cyan-100 shadow-sm">
+              <iframe
+                src="https://www.google.com/maps?q=Hospital+Quir%C3%B3nsalud+del+Vall%C3%A8s+Sabadell&output=embed"
+                width="100%"
+                height="320"
+                style={{ border: 0 }}
+                allowFullScreen=""
+                loading="lazy"
+                referrerPolicy="no-referrer-when-downgrade"
+                title="Mapa Hospital Quirónsalud del Vallès"
+              ></iframe>
             </div>
+
+            <a
+              href="https://www.google.com/maps/search/?api=1&query=Hospital+Quironsalud+del+Valles+Sabadell"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="mt-4 inline-flex rounded-2xl bg-cyan-600 px-5 py-3 text-sm font-semibold text-white transition hover:bg-cyan-700"
+            >
+              Cómo llegar en Google Maps
+            </a>
             <div className="mt-8 space-y-3 text-slate-700">
               <p><span className="font-semibold">Teléfono y WhatsApp:</span> 679 176 144</p>
               <p><span className="font-semibold">Consulta:</span> 1ª planta</p>
@@ -301,7 +353,7 @@ export default function LandingQuironValles() {
         </div>
       </section>
 
-      <section className="bg-cyan-600 text-white">
+      <section className="bg-gradient-to-r from-cyan-600 to-rose-400 text-white">
         <div className="mx-auto max-w-6xl px-6 py-16 text-center">
           <h2 className="text-3xl font-bold tracking-tight lg:text-4xl">
             ¿Tienes dolor por una muela del juicio o necesitas valorar implantes dentales?
@@ -331,6 +383,35 @@ export default function LandingQuironValles() {
           </div>
         </div>
       </section>
+          <a
+        href="https://wa.me/34679176144"
+        target="_blank"
+        rel="noopener noreferrer"
+        aria-label="Escribir por WhatsApp"
+        className="fixed bottom-5 right-5 z-50 inline-flex items-center gap-2 rounded-full bg-emerald-500 px-5 py-3 text-sm font-semibold text-white shadow-lg transition hover:bg-emerald-600"
+      >
+        <span className="text-lg">💬</span>
+        WhatsApp
+      </a>
+
+      <div className="fixed bottom-0 left-0 right-0 z-40 border-t border-cyan-100 bg-white/95 p-3 backdrop-blur md:hidden">
+        <div className="mx-auto flex max-w-6xl gap-3">
+          <a
+            href="tel:+34679176144"
+            className="flex-1 rounded-2xl bg-cyan-600 px-4 py-3 text-center text-sm font-semibold text-white shadow-sm transition hover:bg-cyan-700"
+          >
+            Llamar
+          </a>
+          <a
+            href="https://wa.me/34679176144"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="flex-1 rounded-2xl border border-emerald-200 bg-emerald-50 px-4 py-3 text-center text-sm font-semibold text-emerald-700 transition hover:bg-emerald-100"
+          >
+            WhatsApp
+          </a>
+        </div>
+      </div>
     </main>
     </>
 
