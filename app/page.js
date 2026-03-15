@@ -11,7 +11,7 @@ export default function LandingQuironValles() {
     '@type': 'Dentist',
     name: 'Unidad de Cirugía Oral y Maxilofacial - Hospital Quirónsalud del Vallès',
     description:
-      'Unidad especializada en cirugía oral y maxilofacial en Sabadell. Tratamientos de muelas del juicio, cordales incluidos, quistes maxilares e implantes dentales.',
+      'Unidad especializada en cirugía oral y maxilofacial en Sabadell. Tratamientos de muelas del juicio, cordales incluidos, quistes maxilares e implantes dentales.Trabajamos con las mutuas ofrecidas por el hospital QuironSalud del Vallés.',
     telephone: '+34 679 176 144',
     url: 'https://cirujanomaxilofacialsabadell.com',
     image: 'https://cirujanomaxilofacialsabadell.com/logo-ocm.png',
