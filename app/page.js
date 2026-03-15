@@ -176,7 +176,7 @@ export default function LandingQuironValles() {
           <h2 className="text-3xl font-bold tracking-tight">¿A quién va dirigida esta página?</h2>
           <p className="mt-4 text-lg leading-8 text-slate-700">
             A personas que buscan un cirujano maxilofacial en Sabadell o en el Vallès para resolver problemas como
-            muelas del juicio retenidas, dolor e infección de cordales, quistes de los maxilares o colocación de implantes dentales.
+            muelas del juicio retenidas, dolor e infección de cordales, quistes de los maxilares o colocación de implantes dentales.Trabajamos con las principales mútuas médicas. 
           </p>
         </div>
         <div className="mt-8 flex flex-wrap gap-3">
