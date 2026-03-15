@@ -55,7 +55,9 @@ export default function LandingQuironValles() {
   const doctors = [
   {
     name: 'Dr. Alfonso Mogedas Vegara (Jefe de Servicio)',
-    img: '/doctors/mogedas.jpg',
+    img: '/doctors/mogedas.jpg'display: block;
+  margin-left: auto;
+  margin-right: auto;,
     bio: 'Licenciado en Medicina y Cirugía por la UMH de Alicante. Especialista en Cirugía Oral y Maxilofacial vía Hospital Vall d’Hebron. Doctor en Medicina y Cirugía Cum Laude por la UAB y Fellow del European Board of Oral and Maxillofacial Surgery. Actualmente es adjunto del Servicio de Cirugía Oral y Maxilofacial del Hospital Parc Taulí y profesor colaborador de la UAB.'
   },
   {
