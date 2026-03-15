@@ -76,7 +76,7 @@ export default function LandingQuironValles() {
   {
     name: 'Dr. Radek Lewko',
     img: '/doctors/lewko.jpg',
-    bio: 'Cirujano especializado en cirugía oral y maxilofacial. Aquí se puede añadir una breve biografía profesional, formación y áreas de especial interés.'
+    bio: 'Cirujano especializado en cirugía oral y maxilofacial. "La medicina ha sido mi pasión desde pequeño. Durante los años de carrera despertó mi interés por la anatomía de cabeza y cuello, su complejidad, y la precisión necesaria en esta área anatómica. Esto me ha llevado a especializarme como cirujano oral y maxilofacial, prestando atención a cada detalle, para conseguir la recuperación precoz de mis pacientes"'
   }
 ];
 
