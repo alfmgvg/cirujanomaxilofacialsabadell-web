@@ -66,12 +66,12 @@ export default function LandingQuironValles() {
   {
     name: 'Dr. Nil Valentínes',
     img: '/doctors/valentines.jpg',
-    bio: 'Cirujano especializado en cirugía oral y maxilofacial. Aquí se puede añadir una breve biografía profesional, formación y áreas de especial interés.'
+    bio: 'Cirujano especializado en cirugía oral y maxilofacial. '
   },
   {
     name: 'Dra. Paula Donate',
     img: '/doctors/donate.jpg',
-    bio: 'Cirujana especializada en cirugía oral y maxilofacial. Aquí se puede añadir una breve biografía profesional, formación y áreas de especial interés.'
+    bio: 'Cirujana especializada en cirugía oral y maxilofacial. '
   },
   {
     name: 'Dr. Radek Lewko',
