@@ -71,7 +71,9 @@ export default function LandingQuironValles() {
   {
     name: 'Dra. Paula Donate',
     img: '/doctors/donate.jpg',
-    bio: 'Cirujana especializada en cirugía oral y maxilofacial. '
+    bio: 'Cirujana especializada en cirugía oral y maxilofacial.Licenciada en Medicina por la universidad de Cantabria en 2014 y Doctora en Medicina por la Universidad de Oviedo en 2020. Realicé la residencia en el Hospital Universitario Central de Asturias. Posteriormente, continué mi formación con Másteres y cursos, entre los que destacan: Master en Implantología y Cirugía oral por la universidad Cardenal Herrera, 2021.  Curso de especialización en Medicina estética facial, Universidad Complutense de Madrid, 2021. Posgrado Europeo en Oncología y cirugía de cabeza y cuello, 2024.
+
+ '
   },
   {
     name: 'Dr. Radek Lewko',
