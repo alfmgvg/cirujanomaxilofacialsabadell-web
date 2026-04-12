@@ -1,20 +1,13 @@
-// SEO CONFIG FOR DOMAIN
-// Recommended domain: https://cirujanomaxilofacialsabadell.com
-// Main SEO title:
-// "Cirujano Maxilofacial en Sabadell | Muelas del juicio e implantes dentales"
-// Meta description:
-// "Unidad de Cirugía Oral y Maxilofacial en el Hospital Quirónsalud del Vallès. Especialistas en muelas del juicio, cordales incluidos e implantes dentales en Sabadell y el Vallès."
-
 export default function LandingQuironValles() {
   const localBusinessSchema = {
     '@context': 'https://schema.org',
-    '@type': 'Dentist',
+    '@type': 'MedicalClinic',
     name: 'Unidad de Cirugía Oral y Maxilofacial - Hospital Quirónsalud del Vallès',
     description:
-      'Unidad especializada en cirugía oral y maxilofacial en Sabadell. Tratamientos de muelas del juicio, cordales incluidos, quistes maxilares e implantes dentales. Atendemos pacientes privados y de aseguradoras con cobertura en el Hospital Quirónsalud del Vallès.',
+      'Unidad de cirugía oral y maxilofacial en Sabadell, ubicada en el Hospital Quirónsalud del Vallès. Especialistas en muelas del juicio, cordales incluidos, implantes dentales y cirugía oral compleja.',
     telephone: '+34 679 176 144',
-    url: 'https://cirujanomaxilofacialsabadell.com',
-    image: 'https://cirujanomaxilofacialsabadell.com/logo-ocm.png',
+    url: 'https://www.maxilofacialsabadell.com',
+    image: 'https://www.maxilofacialsabadell.com/logo-ocm.png',
     medicalSpecialty: 'Oral and Maxillofacial Surgery',
     address: {
       '@type': 'PostalAddress',
@@ -33,10 +26,61 @@ export default function LandingQuironValles() {
       'Barberà del Vallès',
       'Castellar del Vallès',
       'Sant Quirze del Vallès',
-      'Barcelona',
     ],
     sameAs: [
       'https://www.quironsalud.com/valles/es/cita-medica#r!/n!/29?dir=next',
+    ],
+  };
+
+  const faqSchema = {
+    '@context': 'https://schema.org',
+    '@type': 'FAQPage',
+    mainEntity: [
+      {
+        '@type': 'Question',
+        name: '¿Cuándo es necesario quitar las muelas del juicio?',
+        acceptedAnswer: {
+          '@type': 'Answer',
+          text:
+            'La extracción suele recomendarse cuando las muelas del juicio provocan dolor, infección, inflamación de la encía, caries en el diente vecino o permanecen retenidas dentro del hueso. En nuestra consulta de Sabadell valoramos cada caso con exploración clínica y radiografías o TAC dental si es necesario.',
+        },
+      },
+      {
+        '@type': 'Question',
+        name: '¿Es dolorosa la extracción de una muela del juicio?',
+        acceptedAnswer: {
+          '@type': 'Answer',
+          text:
+            'La intervención se realiza habitualmente con anestesia local y, en algunos casos, con sedación. Durante el procedimiento el paciente no siente dolor. Después de la cirugía puede aparecer inflamación o molestias leves que normalmente se controlan con medicación y cuidados postoperatorios.',
+        },
+      },
+      {
+        '@type': 'Question',
+        name: '¿Cuánto tiempo dura la recuperación?',
+        acceptedAnswer: {
+          '@type': 'Answer',
+          text:
+            'La mayoría de los pacientes pueden retomar sus actividades habituales en pocos días. La inflamación suele disminuir progresivamente durante la primera semana siguiendo las recomendaciones del cirujano maxilofacial.',
+        },
+      },
+      {
+        '@type': 'Question',
+        name: '¿Cuándo es recomendable colocar un implante dental?',
+        acceptedAnswer: {
+          '@type': 'Answer',
+          text:
+            'Los implantes dentales están indicados cuando se ha perdido uno o varios dientes y se desea recuperar la función masticatoria y la estética. Antes de realizar el tratamiento se evalúa la cantidad y calidad del hueso mediante radiografías o TAC dental.',
+        },
+      },
+      {
+        '@type': 'Question',
+        name: '¿Cuánto tiempo dura un implante dental?',
+        acceptedAnswer: {
+          '@type': 'Answer',
+          text:
+            'Con una correcta planificación quirúrgica y una buena higiene oral, los implantes dentales pueden mantenerse en buen estado durante muchos años. Las revisiones periódicas y el mantenimiento adecuado son fundamentales para su éxito a largo plazo.',
+        },
+      },
     ],
   };
 
@@ -44,10 +88,12 @@ export default function LandingQuironValles() {
     {
       title: 'Muelas del juicio',
       text: 'Valoración y extracción de cordales incluidos, semiincluidos o complejos con un enfoque quirúrgico seguro y personalizado.',
+      href: '/muelas-del-juicio-sabadell',
     },
     {
       title: 'Implantes dentales',
       text: 'Tratamientos con implantes en casos sencillos y complejos, con planificación precisa para recuperar función y estética.',
+      href: '/implantes-dentales-sabadell',
     },
     {
       title: 'Cirugía oral compleja',
@@ -61,14 +107,14 @@ export default function LandingQuironValles() {
       role: 'Jefe de Servicio',
       img: '/doctors/mogedas.jpg',
       position: 'center 32%',
-      bio: 'Licenciado en Medicina y Cirugía por la UMH de Alicante. Especialista en Cirugía Oral y Maxilofacial vía MIR en el Hospital Vall d’Hebron. Doctor en Medicina y Cirugía Cum Laude por la UAB y Fellow del European Board of Oral and Maxillofacial Surgery. Actualmente es adjunto del Servicio de Cirugía Oral y Maxilofacial del Hospital Parc Taulí y profesor colaborador de la UAB.',
+      bio: 'Especialista vía MIR en Cirugía Oral y Maxilofacial, jefe de servicio y responsable de la unidad en el Hospital Quirónsalud del Vallès.',
     },
     {
       name: 'Dra. Laia Fité',
       role: 'Cirujana Oral y Maxilofacial',
       img: '/doctors/fite.jpg',
       position: 'center 34%',
-      bio: 'Licenciada en Medicina y Cirugía, especialista vía MIR en Cirugía Oral y Maxilofacial en el Hospital Vall d’Hebron de Barcelona. Desde 2019 combina la actividad sanitaria pública en el Hospital Parc Taulí de Sabadell con la práctica privada. Formada en patología de glándulas salivales, patología infantil, cirugía del sueño, así como implantología y cirugía oral.',
+      bio: 'Especialista en cirugía oral y maxilofacial con experiencia en patología oral, implantología y cirugía compleja.',
     },
     {
       name: 'Dr. Nil Valentínes',
@@ -82,27 +128,15 @@ export default function LandingQuironValles() {
       role: 'Cirujana Oral y Maxilofacial',
       img: '/doctors/donate.jpg',
       position: 'center 30%',
-      bio: 'Licenciada en Medicina por la Universidad de Cantabria en 2014 y Doctora en Medicina por la Universidad de Oviedo en 2020. Realizó la residencia en el Hospital Universitario Central de Asturias. Posteriormente continuó su formación con másteres y cursos, entre los que destacan: Máster en Implantología y Cirugía Oral por la Universidad Cardenal Herrera en 2021, curso de especialización en Medicina Estética Facial por la Universidad Complutense de Madrid en 2021 y Posgrado Europeo en Oncología y Cirugía de Cabeza y Cuello en 2024.',
+      bio: 'Cirujana oral y maxilofacial con experiencia en implantología, cirugía oral y patología de cabeza y cuello.',
     },
     {
       name: 'Dr. Radek Lewko',
       role: 'Cirujano Oral y Maxilofacial',
       img: '/doctors/lewko.png',
       position: 'center 33%',
-      bio: 'Cirujano especializado en cirugía oral y maxilofacial. “La medicina ha sido mi pasión desde pequeño. Durante los años de carrera despertó mi interés por la anatomía de cabeza y cuello, su complejidad y la precisión necesaria en esta área anatómica. Esto me ha llevado a especializarme como cirujano oral y maxilofacial, prestando atención a cada detalle para conseguir la recuperación precoz de mis pacientes”.',
+      bio: 'Cirujano especializado en cirugía oral y maxilofacial, centrado en la precisión quirúrgica y la recuperación del paciente.',
     },
-  ];
-
-  const nearbyCities = [
-    'Sabadell',
-    'Terrassa',
-    'Sant Cugat del Vallès',
-    'Rubí',
-    'Cerdanyola del Vallès',
-    'Barberà del Vallès',
-    'Castellar del Vallès',
-    'Sant Quirze del Vallès',
-    'Barcelona',
   ];
 
   function TeamMemberCard({ doctor }) {
@@ -111,7 +145,7 @@ export default function LandingQuironValles() {
         <div className="mb-4 h-72 overflow-hidden rounded-2xl bg-slate-100">
           <img
             src={doctor.img}
-            alt={doctor.name}
+            alt={`${doctor.name}, ${doctor.role}`}
             className="block h-full w-full object-cover"
             style={{ objectPosition: doctor.position || 'center 35%' }}
             loading="lazy"
@@ -131,6 +165,10 @@ export default function LandingQuironValles() {
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(localBusinessSchema) }}
       />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
+      />
 
       <header className="sticky top-0 z-40 w-full border-b border-cyan-100 bg-white/95 backdrop-blur">
         <div className="mx-auto flex max-w-6xl items-center justify-between gap-4 px-6 py-4">
@@ -141,7 +179,7 @@ export default function LandingQuironValles() {
               className="h-12 w-auto"
             />
             <div className="text-sm font-medium text-slate-600">
-              Unidad de Cirugía Oral y Maxilofacial
+              Unidad de Cirugía Oral y Maxilofacial · Sabadell
             </div>
           </div>
 
@@ -164,16 +202,16 @@ export default function LandingQuironValles() {
               </span>
 
               <h1 className="mt-5 text-4xl font-bold tracking-tight text-cyan-900 lg:text-5xl">
-                Especialistas en muelas del juicio, cirugía oral compleja e implantes
-                dentales en Sabadell
+                Cirujano maxilofacial en Sabadell para muelas del juicio e implantes
+                dentales
               </h1>
 
               <p className="mt-5 text-lg leading-8 text-slate-700">
-                Atendemos a pacientes de Sabadell y poblaciones cercanas que necesitan
-                extracción de cordales incluidos, tratamiento de quistes maxilares e
-                implantes dentales, tanto en casos sencillos como complejos. Atendemos
-                pacientes privados y de aseguradoras con cobertura en el Hospital
-                Quirónsalud del Vallès.
+                En nuestra consulta de cirugía oral y maxilofacial en Sabadell, ubicada
+                en el Hospital Quirónsalud del Vallès, tratamos muelas del juicio,
+                cordales incluidos, implantes dentales y casos de cirugía oral compleja.
+                Atendemos pacientes privados y de aseguradoras con cobertura en el
+                hospital.
               </p>
 
               <div className="mt-8 flex flex-wrap gap-4">
@@ -181,7 +219,7 @@ export default function LandingQuironValles() {
                   href="https://www.quironsalud.com/valles/es/cita-medica#r!/n!/29?dir=next"
                   className="rounded-2xl bg-cyan-600 px-6 py-3 text-sm font-semibold text-white shadow-sm transition hover:bg-cyan-700"
                 >
-                  Pedir cita
+                  Pedir cita en Quirónsalud
                 </a>
 
                 <a
@@ -213,11 +251,19 @@ export default function LandingQuironValles() {
                   Tratamientos destacados
                 </p>
                 <ul className="mt-4 space-y-3 text-slate-700">
-                  <li>• Extracción de muelas del juicio complejas</li>
-                  <li>• Cordales incluidos y dientes retenidos</li>
-                  <li>• Quistes maxilares y cirugía oral</li>
-                  <li>• Implantes dentales unitarios y múltiples</li>
-                  <li>• Rehabilitación de casos complejos</li>
+                  <li>
+                    <a href="/muelas-del-juicio-sabadell" className="hover:underline">
+                      Extracción de muelas del juicio complejas
+                    </a>
+                  </li>
+                  <li>Cordales incluidos y dientes retenidos</li>
+                  <li>Quistes maxilares y cirugía oral</li>
+                  <li>
+                    <a href="/implantes-dentales-sabadell" className="hover:underline">
+                      Implantes dentales unitarios y múltiples
+                    </a>
+                  </li>
+                  <li>Rehabilitación de casos complejos</li>
                 </ul>
               </div>
 
@@ -241,26 +287,17 @@ export default function LandingQuironValles() {
         <section className="mx-auto max-w-6xl px-6 py-16">
           <div className="max-w-3xl">
             <h2 className="text-3xl font-bold tracking-tight">
-              ¿A quién va dirigida esta página?
+              ¿Cuándo conviene acudir a un cirujano maxilofacial?
             </h2>
             <p className="mt-4 text-lg leading-8 text-slate-700">
-              A personas que buscan un cirujano maxilofacial en Sabadell o en el Vallès
-              para resolver problemas como muelas del juicio retenidas, dolor e infección
-              de cordales, quistes de los maxilares o colocación de implantes dentales.
-              Atendemos pacientes privados y trabajamos con las principales mutuas médicas
-              con cobertura en el hospital.
+              Esta consulta está orientada a pacientes que necesitan valorar muelas del
+              juicio retenidas, cordales con dolor o infección, implantes dentales o
+              procedimientos de cirugía oral compleja en Sabadell y el Vallès.
             </p>
-          </div>
-
-          <div className="mt-8 flex flex-wrap gap-3">
-            {nearbyCities.map((city) => (
-              <span
-                key={city}
-                className="rounded-full bg-cyan-100 px-4 py-2 text-sm text-slate-700"
-              >
-                {city}
-              </span>
-            ))}
+            <p className="mt-4 text-lg leading-8 text-slate-700">
+              Atendemos pacientes de Sabadell, Terrassa, Sant Cugat, Rubí, Cerdanyola,
+              Barberà, Castellar y otras poblaciones del Vallès.
+            </p>
           </div>
         </section>
 
@@ -269,52 +306,51 @@ export default function LandingQuironValles() {
             <div className="max-w-3xl">
               <h2 className="text-3xl font-bold tracking-tight">Qué tratamos</h2>
               <p className="mt-4 text-lg leading-8 text-slate-700">
-                Tratamos patología habitual y compleja de cirugía oral y maxilofacial,
-                con especial dedicación a la extracción de cordales incluidos, la cirugía
-                oral avanzada y la colocación de implantes dentales.
+                Tratamos patología de cirugía oral y maxilofacial en Sabadell, con
+                especial dedicación a la extracción de cordales incluidos, la cirugía
+                oral compleja y la colocación de implantes dentales.
               </p>
             </div>
 
             <div className="mt-10 grid gap-6 md:grid-cols-3">
-              {treatments.map((item) => (
-                <article
-                  key={item.title}
-                  className="rounded-3xl border border-cyan-100 bg-white p-6 shadow-sm"
-                >
-                  <h3 className="text-xl font-semibold">{item.title}</h3>
-                  <p className="mt-3 leading-7 text-slate-700">{item.text}</p>
-                </article>
-              ))}
+              {treatments.map((item) =>
+                item.href ? (
+                  <a
+                    key={item.title}
+                    href={item.href}
+                    className="rounded-3xl border border-cyan-100 bg-white p-6 shadow-sm transition hover:-translate-y-0.5 hover:shadow-md"
+                  >
+                    <h3 className="text-xl font-semibold">{item.title}</h3>
+                    <p className="mt-3 leading-7 text-slate-700">{item.text}</p>
+                    <span className="mt-4 inline-block text-sm font-semibold text-cyan-900">
+                      Ver más →
+                    </span>
+                  </a>
+                ) : (
+                  <article
+                    key={item.title}
+                    className="rounded-3xl border border-cyan-100 bg-white p-6 shadow-sm"
+                  >
+                    <h3 className="text-xl font-semibold">{item.title}</h3>
+                    <p className="mt-3 leading-7 text-slate-700">{item.text}</p>
+                  </article>
+                )
+              )}
             </div>
           </div>
         </section>
 
         <section className="mx-auto max-w-6xl px-6 py-16">
           <div className="grid gap-10 lg:grid-cols-2 lg:items-start">
-            <div>
-              <h2 className="text-3xl font-bold tracking-tight">
-                Equipo de cirujanos maxilofaciales
-              </h2>
-              <p className="mt-4 text-lg leading-8 text-slate-700">
-                Equipo de cirugía oral y maxilofacial con experiencia en cirugía de
-                cordales incluidos, implantes dentales y tratamiento de patología oral
-                compleja. El Dr. Alfonso Mogedas Vegara es el jefe de servicio y
-                cirujano maxilofacial responsable de la unidad.
-              </p>
-
-              <div className="mt-8 grid gap-4 sm:grid-cols-2">
-                {doctors.map((doctor) => (
-                  <TeamMemberCard key={doctor.name} doctor={doctor} />
-                ))}
-              </div>
-            </div>
-
             <div className="rounded-3xl border border-cyan-100 bg-cyan-50 p-8 shadow-sm">
               <h2 className="text-3xl font-bold tracking-tight">Dónde estamos</h2>
 
               <p className="mt-4 text-lg leading-8 text-slate-700">
-                Hospital Quirónsalud del Vallès
-                <br />
+                Consulta de cirugía oral y maxilofacial en Sabadell, situada en el
+                Hospital Quirónsalud del Vallès.
+              </p>
+
+              <p className="mt-4 text-lg leading-8 text-slate-700">
                 Passeig Rubió i Ors, 23
                 <br />
                 08203 Sabadell, Barcelona
@@ -361,26 +397,43 @@ export default function LandingQuironValles() {
                 </p>
               </div>
             </div>
+
+            <div>
+              <h2 className="text-3xl font-bold tracking-tight">
+                Equipo de cirujanos maxilofaciales
+              </h2>
+              <p className="mt-4 text-lg leading-8 text-slate-700">
+                Equipo de cirugía oral y maxilofacial con experiencia en cordales
+                incluidos, implantes dentales y cirugía oral compleja. El Dr. Alfonso
+                Mogedas Vegara es el jefe de servicio y responsable de la unidad.
+              </p>
+
+              <div className="mt-8 grid gap-4 sm:grid-cols-2">
+                {doctors.map((doctor) => (
+                  <TeamMemberCard key={doctor.name} doctor={doctor} />
+                ))}
+              </div>
+            </div>
           </div>
         </section>
 
         <section className="mx-auto max-w-6xl px-6 py-16">
           <div className="max-w-3xl">
             <h2 className="text-3xl font-bold tracking-tight">
-              Extracción de muelas del juicio en Sabadell
+              Muelas del juicio en Sabadell
             </h2>
             <p className="mt-4 text-lg leading-8 text-slate-700">
-              Las muelas del juicio o cordales pueden provocar dolor, infecciones
-              repetidas, inflamación de la encía o daño a los dientes vecinos. Nuestro
-              equipo de cirugía oral y maxilofacial en Sabadell está especializado en la
-              extracción de cordales incluidos o complejos, utilizando técnicas
-              quirúrgicas seguras y una planificación individualizada para cada paciente.
+              Valoramos y tratamos cordales incluidos, semierupcionados o complejos que
+              pueden causar dolor, infección, inflamación o daño en los dientes vecinos.
+              Cuando es necesario, utilizamos radiografía o TAC dental para planificar la
+              cirugía con precisión.
             </p>
-            <p className="mt-4 text-lg leading-8 text-slate-700">
-              Valoramos cada caso con radiografías o TAC dental cuando es necesario para
-              determinar la posición exacta del cordal y planificar la cirugía de forma
-              precisa.
-            </p>
+            <a
+              href="/muelas-del-juicio-sabadell"
+              className="mt-6 inline-flex rounded-2xl bg-cyan-600 px-5 py-3 text-sm font-semibold text-white transition hover:bg-cyan-700"
+            >
+              Ver información completa sobre muelas del juicio
+            </a>
           </div>
         </section>
 
@@ -391,45 +444,17 @@ export default function LandingQuironValles() {
                 Implantes dentales en Sabadell
               </h2>
               <p className="mt-4 text-lg leading-8 text-slate-700">
-                Los implantes dentales permiten sustituir dientes perdidos recuperando la
-                función masticatoria y la estética. En nuestra consulta del Hospital
-                Quirónsalud del Vallès realizamos tanto implantes unitarios como
-                rehabilitaciones más complejas.
+                Realizamos tratamientos con implantes dentales para sustituir dientes
+                perdidos, tanto en casos sencillos como complejos, con planificación
+                quirúrgica individualizada en el Hospital Quirónsalud del Vallès.
               </p>
-              <p className="mt-4 text-lg leading-8 text-slate-700">
-                También tratamos casos con pérdida de hueso, dientes retenidos o
-                situaciones quirúrgicas complejas que requieren la valoración de un
-                cirujano maxilofacial.
-              </p>
+              <a
+                href="/implantes-dentales-sabadell"
+                className="mt-6 inline-flex rounded-2xl bg-cyan-600 px-5 py-3 text-sm font-semibold text-white transition hover:bg-cyan-700"
+              >
+                Ver información completa sobre implantes dentales
+              </a>
             </div>
-          </div>
-        </section>
-
-        <section className="mx-auto max-w-6xl px-6 py-16">
-          <div className="max-w-3xl">
-            <h2 className="text-3xl font-bold tracking-tight">
-              Unidad de Cirugía Oral y Maxilofacial en Sabadell
-            </h2>
-            <p className="mt-4 text-lg leading-8 text-slate-700">
-              La Unidad de Cirugía Oral y Maxilofacial del Hospital Quirónsalud del
-              Vallès está orientada al diagnóstico y tratamiento quirúrgico de patologías
-              de la cavidad oral y de los maxilares. Nuestro equipo atiende a pacientes
-              de Sabadell y del conjunto del Vallès que requieren procedimientos de
-              cirugía oral avanzada.
-            </p>
-            <p className="mt-4 text-lg leading-8 text-slate-700">
-              Entre los tratamientos más frecuentes se encuentran la extracción de muelas
-              del juicio complejas, el tratamiento de cordales incluidos, la cirugía de
-              quistes maxilares y la colocación de implantes dentales. También valoramos
-              situaciones más complejas que requieren planificación quirúrgica
-              individualizada.
-            </p>
-            <p className="mt-4 text-lg leading-8 text-slate-700">
-              Nuestro objetivo es ofrecer una atención médica especializada, con un
-              enfoque seguro y personalizado para cada paciente, utilizando técnicas
-              actuales de cirugía oral y maxilofacial dentro del entorno hospitalario del
-              Hospital Quirónsalud del Vallès.
-            </p>
           </div>
         </section>
 
@@ -442,10 +467,11 @@ export default function LandingQuironValles() {
                 ¿Cuándo es necesario quitar las muelas del juicio?
               </h3>
               <p className="mt-2">
-                La extracción de las muelas del juicio suele recomendarse cuando
-                provocan dolor, infecciones repetidas, inflamación de la encía, caries
-                en el diente vecino o cuando permanecen retenidas dentro del hueso. Cada
-                caso debe valorarse mediante exploración clínica y radiografías.
+                La extracción suele recomendarse cuando las muelas del juicio provocan
+                dolor, infección, inflamación de la encía, caries en el diente vecino o
+                permanecen retenidas dentro del hueso. En nuestra consulta de Sabadell
+                valoramos cada caso con exploración clínica y radiografías o TAC dental
+                si es necesario.
               </p>
             </div>
 
@@ -456,8 +482,8 @@ export default function LandingQuironValles() {
               <p className="mt-2">
                 La intervención se realiza habitualmente con anestesia local y, en
                 algunos casos, con sedación. Durante el procedimiento el paciente no
-                siente dolor. Después de la cirugía puede aparecer inflamación o
-                molestias leves que normalmente se controlan con medicación y cuidados
+                siente dolor. Después de la cirugía puede aparecer inflamación o molestias
+                leves que normalmente se controlan con medicación y cuidados
                 postoperatorios.
               </p>
             </div>
@@ -467,10 +493,9 @@ export default function LandingQuironValles() {
                 ¿Cuánto tiempo dura la recuperación?
               </h3>
               <p className="mt-2">
-                La recuperación suele ser rápida. La mayoría de los pacientes pueden
-                retomar sus actividades habituales en pocos días. La inflamación suele
-                disminuir progresivamente durante la primera semana siguiendo las
-                recomendaciones del cirujano.
+                La mayoría de los pacientes pueden retomar sus actividades habituales en
+                pocos días. La inflamación suele disminuir progresivamente durante la
+                primera semana siguiendo las recomendaciones del cirujano maxilofacial.
               </p>
             </div>
 
@@ -480,9 +505,9 @@ export default function LandingQuironValles() {
               </h3>
               <p className="mt-2">
                 Los implantes dentales están indicados cuando se ha perdido uno o varios
-                dientes y se desea recuperar la función masticatoria y la estética.
-                Antes de realizar el tratamiento se evalúa la cantidad y calidad del
-                hueso mediante radiografías o TAC dental.
+                dientes y se desea recuperar la función masticatoria y la estética. Antes
+                de realizar el tratamiento se evalúa la cantidad y calidad del hueso
+                mediante radiografías o TAC dental.
               </p>
             </div>
 
@@ -521,8 +546,7 @@ export default function LandingQuironValles() {
               </h3>
               <p className="mt-3 text-slate-700">
                 Información detallada sobre cordales incluidos, síntomas frecuentes,
-                cuándo es recomendable la extracción y cómo es el proceso de
-                recuperación.
+                cuándo es recomendable la extracción y cómo es el proceso de recuperación.
               </p>
               <span className="mt-4 inline-block text-sm font-semibold text-cyan-900">
                 Ver información completa →
@@ -550,8 +574,7 @@ export default function LandingQuironValles() {
         <section className="bg-gradient-to-r from-cyan-600 to-rose-400 text-white">
           <div className="mx-auto max-w-6xl px-6 py-16 text-center">
             <h2 className="text-3xl font-bold tracking-tight lg:text-4xl">
-              ¿Tienes dolor por una muela del juicio o necesitas valorar implantes
-              dentales?
+              ¿Necesitas valorar muelas del juicio o implantes dentales en Sabadell?
             </h2>
 
             <p className="mx-auto mt-4 max-w-3xl text-lg leading-8 text-white/90">
