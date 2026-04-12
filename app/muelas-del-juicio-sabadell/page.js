@@ -1,95 +1,144 @@
 export default function Page() {
   return (
-    <main className="min-h-screen bg-white pb-24 text-cyan-900 selection:bg-cyan-100">
-      <section className="bg-cyan-50 border-b border-cyan-100">
-        <div className="mx-auto max-w-4xl px-6 py-16 lg:py-20">
-          <span className="inline-flex rounded-full border border-cyan-200 bg-white px-4 py-1 text-sm font-medium text-cyan-700">
-            Cirugía Oral y Maxilofacial · Sabadell
-          </span>
-          <h1 className="mt-5 text-4xl font-bold tracking-tight lg:text-5xl">
-            Extracción de muelas del juicio en Sabadell
-          </h1>
-          <p className="mt-5 text-lg leading-8 text-slate-700">
-            Las muelas del juicio o cordales son los últimos molares en aparecer. En muchos casos no
-            tienen espacio suficiente para erupcionar correctamente y pueden quedar retenidos dentro
-            del hueso o parcialmente cubiertos por la encía.
+    <main className="min-h-screen bg-white text-cyan-900 px-6 py-16">
+      <div className="mx-auto max-w-4xl">
+
+        <h1 className="text-4xl font-bold">
+          Extracción de muelas del juicio en Sabadell
+        </h1>
+
+        <p className="mt-6 text-lg text-slate-700">
+          La extracción de muelas del juicio o cordales es uno de los procedimientos más
+          frecuentes en cirugía oral y maxilofacial. En nuestra consulta en Sabadell,
+          ubicada en el Hospital Quirónsalud del Vallès, tratamos casos simples y
+          complejos con un enfoque seguro y personalizado.
+        </p>
+
+        <div className="mt-8 flex gap-4 flex-wrap">
+          <a
+            href="https://www.quironsalud.com/valles/es/cita-medica#r!/n!/29?dir=next"
+            className="bg-cyan-600 text-white px-6 py-3 rounded-2xl font-semibold"
+          >
+            Pedir cita
+          </a>
+
+          <a
+            href="tel:+34679176144"
+            className="border px-6 py-3 rounded-2xl font-semibold"
+          >
+            Llamar ahora
+          </a>
+        </div>
+
+        {/* SINTOMAS */}
+        <section className="mt-16">
+          <h2 className="text-2xl font-bold">
+            ¿Cuándo hay que quitar las muelas del juicio?
+          </h2>
+
+          <p className="mt-4 text-slate-700">
+            Las muelas del juicio pueden provocar problemas cuando no tienen espacio para
+            salir correctamente o quedan retenidas dentro del hueso. En estos casos es
+            frecuente que aparezcan síntomas como:
           </p>
-          <div className="mt-8 flex flex-wrap gap-4">
+
+          <ul className="mt-4 space-y-2 text-slate-700">
+            <li>• Dolor en la zona posterior de la boca</li>
+            <li>• Inflamación de la encía</li>
+            <li>• Infecciones repetidas</li>
+            <li>• Dificultad para abrir la boca</li>
+            <li>• Caries en el diente adyacente</li>
+          </ul>
+        </section>
+
+        {/* TIPOS */}
+        <section className="mt-16">
+          <h2 className="text-2xl font-bold">
+            Tipos de muelas del juicio
+          </h2>
+
+          <p className="mt-4 text-slate-700">
+            No todas las muelas del juicio son iguales. El tratamiento depende de su
+            posición:
+          </p>
+
+          <ul className="mt-4 space-y-2 text-slate-700">
+            <li>• Cordales erupcionados (han salido completamente)</li>
+            <li>• Cordales semiincluidos (parcialmente cubiertos)</li>
+            <li>• Cordales incluidos (dentro del hueso)</li>
+          </ul>
+
+          <p className="mt-4 text-slate-700">
+            En casos complejos utilizamos TAC dental para planificar la cirugía con
+            precisión.
+          </p>
+        </section>
+
+        {/* PROCEDIMIENTO */}
+        <section className="mt-16">
+          <h2 className="text-2xl font-bold">
+            ¿Cómo es la extracción?
+          </h2>
+
+          <p className="mt-4 text-slate-700">
+            La intervención se realiza con anestesia local y, en algunos casos, con
+            sedación. El procedimiento suele durar entre 20 y 45 minutos dependiendo de la
+            complejidad.
+          </p>
+
+          <p className="mt-4 text-slate-700">
+            Nuestro objetivo es realizar una cirugía lo más mínimamente invasiva posible
+            para facilitar una recuperación rápida.
+          </p>
+        </section>
+
+        {/* RECUPERACION */}
+        <section className="mt-16">
+          <h2 className="text-2xl font-bold">
+            Recuperación tras la cirugía
+          </h2>
+
+          <p className="mt-4 text-slate-700">
+            La recuperación suele ser rápida. Durante los primeros días puede aparecer
+            inflamación o molestias leves que se controlan con medicación.
+          </p>
+
+          <ul className="mt-4 space-y-2 text-slate-700">
+            <li>• Inflamación durante 48-72h</li>
+            <li>• Vida normal en pocos días</li>
+            <li>• Control en consulta si es necesario</li>
+          </ul>
+        </section>
+
+        {/* CTA FINAL */}
+        <section className="mt-16 bg-cyan-50 p-8 rounded-3xl">
+          <h2 className="text-2xl font-bold">
+            ¿Te duele una muela del juicio?
+          </h2>
+
+          <p className="mt-4 text-slate-700">
+            Si tienes dolor o sospechas que una muela del juicio te está dando problemas,
+            podemos valorar tu caso en nuestra consulta en Sabadell.
+          </p>
+
+          <div className="mt-6 flex gap-4 flex-wrap">
             <a
               href="https://www.quironsalud.com/valles/es/cita-medica#r!/n!/29?dir=next"
-              className="rounded-2xl bg-cyan-600 px-6 py-3 text-sm font-semibold text-white shadow-sm transition hover:bg-cyan-700"
+              className="bg-cyan-600 text-white px-6 py-3 rounded-2xl font-semibold"
             >
               Pedir cita
             </a>
-            <a
-              href="tel:+34679176144"
-              className="rounded-2xl border border-cyan-200 px-6 py-3 text-sm font-semibold text-cyan-900 transition hover:bg-cyan-100"
-            >
-              Llamar al 679 176 144
-            </a>
+
             <a
               href="https://wa.me/34679176144"
-              className="rounded-2xl border border-cyan-200 px-6 py-3 text-sm font-semibold text-cyan-900 transition hover:bg-cyan-100"
+              className="border px-6 py-3 rounded-2xl font-semibold"
             >
               WhatsApp
             </a>
           </div>
-        </div>
-      </section>
+        </section>
 
-      <section className="mx-auto max-w-4xl px-6 py-16">
-        <h2 className="text-2xl font-semibold">Síntomas frecuentes</h2>
-        <ul className="mt-4 space-y-2 text-slate-700">
-          <li>• Dolor en la zona posterior de la mandíbula</li>
-          <li>• Inflamación de la encía</li>
-          <li>• Infecciones repetidas</li>
-          <li>• Dificultad para abrir la boca</li>
-          <li>• Daño en el molar vecino</li>
-        </ul>
-
-        <h2 className="mt-10 text-2xl font-semibold">¿Cuándo conviene valorar la extracción?</h2>
-        <p className="mt-4 leading-8 text-slate-700">
-          La extracción de una muela del juicio suele recomendarse cuando produce dolor, infecciones
-          repetidas, inflamación de la encía, caries en el diente vecino o cuando el cordal queda
-          retenido dentro del hueso y puede generar complicaciones a medio o largo plazo.
-        </p>
-
-        <h2 className="mt-10 text-2xl font-semibold">¿Cómo se realiza la cirugía?</h2>
-        <p className="mt-4 leading-8 text-slate-700">
-          La intervención se realiza habitualmente con anestesia local y, en algunos casos,
-          con sedación. Antes del procedimiento se realiza un estudio radiológico o TAC dental
-          para conocer la posición exacta del cordal y planificar la cirugía de forma segura.
-        </p>
-
-        <h2 className="mt-10 text-2xl font-semibold">Recuperación</h2>
-        <p className="mt-4 leading-8 text-slate-700">
-          La recuperación suele ser rápida. Durante los primeros días puede aparecer inflamación
-          o molestias leves que normalmente se controlan con medicación y siguiendo las
-          recomendaciones postoperatorias del cirujano.
-        </p>
-
-        <div className="mt-12 rounded-3xl border border-cyan-100 bg-cyan-50 p-8">
-          <h3 className="text-xl font-semibold">¿Necesitas valorar un cordal incluido en Sabadell?</h3>
-          <p className="mt-3 leading-7 text-slate-700">
-            Nuestro equipo de cirugía oral y maxilofacial puede estudiar tu caso y orientarte sobre
-            el tratamiento más adecuado.
-          </p>
-          <div className="mt-6 flex flex-wrap gap-4">
-            <a
-              href="https://www.quironsalud.com/valles/es/cita-medica#r!/n!/29?dir=next"
-              className="rounded-2xl bg-cyan-600 px-6 py-3 text-sm font-semibold text-white shadow-sm transition hover:bg-cyan-700"
-            >
-              Pedir cita online
-            </a>
-            <a
-              href="https://wa.me/34679176144"
-              className="rounded-2xl border border-cyan-200 px-6 py-3 text-sm font-semibold text-cyan-900 transition hover:bg-cyan-100"
-            >
-              Escribir por WhatsApp
-            </a>
-          </div>
-        </div>
-      </section>
+      </div>
     </main>
   );
 }
