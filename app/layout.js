@@ -1,15 +1,8 @@
-import './globals.css';
-
 export const metadata = {
   title: 'Cirujano Maxilofacial en Sabadell | Muelas del juicio e implantes dentales',
   description:
-    'Unidad de Cirugía Oral y Maxilofacial en el Hospital Quirónsalud del Vallès. Especialistas en muelas del juicio, cordales incluidos e implantes dentales en Sabadell y el Vallès.',
+    'Unidad de cirugía oral y maxilofacial en Sabadell, en el Hospital Quirónsalud del Vallès. Especialistas en muelas del juicio, cordales incluidos, implantes dentales y cirugía oral compleja.',
+  alternates: {
+    canonical: 'https://www.maxilofacialsabadell.com',
+  },
 };
-
-export default function RootLayout({ children }) {
-  return (
-    <html lang="es">
-      <body>{children}</body>
-    </html>
-  );
-}
