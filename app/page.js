@@ -1,4 +1,8 @@
 export default function LandingQuironValles() {
+  const doctoraliaUrl = 'https://www.doctoralia.es/tu-perfil';
+  const googleProfileUrl = 'https://share.google/30xWNq7DOS99p7VmX';
+  const maxDentalUrl = 'https://www.maxdentalvalles.com';
+
   const localBusinessSchema = {
     '@context': 'https://schema.org',
     '@type': 'MedicalClinic',
@@ -29,6 +33,9 @@ export default function LandingQuironValles() {
     ],
     sameAs: [
       'https://www.quironsalud.com/valles/es/cita-medica#r!/n!/29?dir=next',
+      doctoraliaUrl,
+      googleProfileUrl,
+      maxDentalUrl,
     ],
   };
 
@@ -412,6 +419,72 @@ export default function LandingQuironValles() {
                 {doctors.map((doctor) => (
                   <TeamMemberCard key={doctor.name} doctor={doctor} />
                 ))}
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section className="border-y border-cyan-100 bg-cyan-50">
+          <div className="mx-auto max-w-6xl px-6 py-16">
+            <div className="max-w-4xl">
+              <h2 className="text-3xl font-bold tracking-tight">
+                Opiniones y perfiles del equipo
+              </h2>
+
+              <p className="mt-4 text-lg leading-8 text-slate-700">
+                Puedes consultar opiniones de pacientes, información adicional del
+                equipo y otros perfiles relacionados en Doctoralia, Google y Max Dental
+                Vallès.
+              </p>
+
+              <div className="mt-8 grid gap-6 md:grid-cols-3">
+                <a
+                  href={doctoraliaUrl}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="rounded-3xl border border-cyan-100 bg-white p-6 shadow-sm transition hover:-translate-y-0.5 hover:shadow-md"
+                >
+                  <h3 className="text-xl font-semibold">Doctoralia</h3>
+                  <p className="mt-3 leading-7 text-slate-700">
+                    Consulta el perfil profesional y las opiniones de pacientes en
+                    Doctoralia.
+                  </p>
+                  <span className="mt-4 inline-block text-sm font-semibold text-cyan-900">
+                    Ver perfil →
+                  </span>
+                </a>
+
+                <a
+                  href={googleProfileUrl}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="rounded-3xl border border-cyan-100 bg-white p-6 shadow-sm transition hover:-translate-y-0.5 hover:shadow-md"
+                >
+                  <h3 className="text-xl font-semibold">Google</h3>
+                  <p className="mt-3 leading-7 text-slate-700">
+                    Revisa nuestra presencia en Google y consulta valoraciones de
+                    pacientes.
+                  </p>
+                  <span className="mt-4 inline-block text-sm font-semibold text-cyan-900">
+                    Ver perfil →
+                  </span>
+                </a>
+
+                <a
+                  href={maxDentalUrl}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="rounded-3xl border border-cyan-100 bg-white p-6 shadow-sm transition hover:-translate-y-0.5 hover:shadow-md"
+                >
+                  <h3 className="text-xl font-semibold">Max Dental Vallès</h3>
+                  <p className="mt-3 leading-7 text-slate-700">
+                    Accede a otra web relacionada con nuestro equipo y actividad
+                    asistencial.
+                  </p>
+                  <span className="mt-4 inline-block text-sm font-semibold text-cyan-900">
+                    Visitar web →
+                  </span>
+                </a>
               </div>
             </div>
           </div>
