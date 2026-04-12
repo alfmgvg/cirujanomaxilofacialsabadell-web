@@ -1,3 +1,5 @@
+import './globals.css';
+
 export const metadata = {
   title: 'Cirujano Maxilofacial en Sabadell | Muelas del juicio e implantes dentales',
   description:
@@ -6,3 +8,11 @@ export const metadata = {
     canonical: 'https://www.maxilofacialsabadell.com',
   },
 };
+
+export default function RootLayout({ children }) {
+  return (
+    <html lang="es">
+      <body>{children}</body>
+    </html>
+  );
+}
