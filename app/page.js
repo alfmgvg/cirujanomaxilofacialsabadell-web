@@ -1,7 +1,12 @@
 export default function LandingQuironValles() {
-  const doctoraliaUrl = 'https://www.doctoralia.es/tu-perfil';
+  const doctoraliaUrl =
+    'https://www.doctoralia.es/alfonso-mogedas-vegara/cirujano-oral-y-maxilofacial/vic';
   const googleProfileUrl = 'https://share.google/30xWNq7DOS99p7VmX';
   const maxDentalUrl = 'https://www.maxdentalvalles.com';
+  const quironServiceUrl =
+    'https://www.quironsalud.com/valles/es/cartera-servicios/odontologia-cirugia-maxilofacial/cirugia-maxilofacial';
+  const quironAppointmentUrl =
+    'https://www.quironsalud.com/valles/es/cita-medica#r!/n!/29?dir=next';
 
   const localBusinessSchema = {
     '@context': 'https://schema.org',
@@ -32,7 +37,8 @@ export default function LandingQuironValles() {
       'Sant Quirze del Vallès',
     ],
     sameAs: [
-      'https://www.quironsalud.com/valles/es/cita-medica#r!/n!/29?dir=next',
+      quironAppointmentUrl,
+      quironServiceUrl,
       doctoraliaUrl,
       googleProfileUrl,
       maxDentalUrl,
@@ -142,7 +148,7 @@ export default function LandingQuironValles() {
       role: 'Cirujano Oral y Maxilofacial',
       img: '/doctors/lewko.png',
       position: 'center 33%',
-      bio: 'Cirujano especializado en cirugía oral y maxilofacial, centrado en la precisión quirúrgica y la recuperación del paciente.',
+      bio: 'Cirujano especializado en cirugía oral y maxilofacial.',
     },
   ];
 
@@ -223,7 +229,7 @@ export default function LandingQuironValles() {
 
               <div className="mt-8 flex flex-wrap gap-4">
                 <a
-                  href="https://www.quironsalud.com/valles/es/cita-medica#r!/n!/29?dir=next"
+                  href={quironAppointmentUrl}
                   className="rounded-2xl bg-cyan-600 px-6 py-3 text-sm font-semibold text-white shadow-sm transition hover:bg-cyan-700"
                 >
                   Pedir cita en Quirónsalud
@@ -395,12 +401,21 @@ export default function LandingQuironValles() {
                 </p>
                 <p>
                   <span className="font-semibold">Reserva online:</span>{' '}
-                  <a
-                    href="https://www.quironsalud.com/valles/es/cita-medica#r!/n!/29?dir=next"
-                    className="underline"
-                  >
+                  <a href={quironAppointmentUrl} className="underline">
                     Pedir cita en Quirónsalud
                   </a>
+                </p>
+                <p className="text-sm leading-6 text-slate-600">
+                  Esta unidad forma parte del servicio de cirugía oral y maxilofacial del{' '}
+                  <a
+                    href={quironServiceUrl}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="underline"
+                  >
+                    Hospital Quirónsalud del Vallès
+                  </a>
+                  .
                 </p>
               </div>
             </div>
@@ -433,11 +448,11 @@ export default function LandingQuironValles() {
 
               <p className="mt-4 text-lg leading-8 text-slate-700">
                 Puedes consultar opiniones de pacientes, información adicional del
-                equipo y otros perfiles relacionados en Doctoralia, Google y Max Dental
-                Vallès.
+                equipo y otros perfiles relacionados en Doctoralia, Google, la página
+                oficial de Quirónsalud y Max Dental Vallès.
               </p>
 
-              <div className="mt-8 grid gap-6 md:grid-cols-3">
+              <div className="mt-8 grid gap-6 md:grid-cols-2 xl:grid-cols-4">
                 <a
                   href={doctoraliaUrl}
                   target="_blank"
@@ -467,6 +482,22 @@ export default function LandingQuironValles() {
                   </p>
                   <span className="mt-4 inline-block text-sm font-semibold text-cyan-900">
                     Ver perfil →
+                  </span>
+                </a>
+
+                <a
+                  href={quironServiceUrl}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="rounded-3xl border border-cyan-100 bg-white p-6 shadow-sm transition hover:-translate-y-0.5 hover:shadow-md"
+                >
+                  <h3 className="text-xl font-semibold">Quirónsalud</h3>
+                  <p className="mt-3 leading-7 text-slate-700">
+                    Consulta la página oficial del servicio de cirugía oral y
+                    maxilofacial del hospital.
+                  </p>
+                  <span className="mt-4 inline-block text-sm font-semibold text-cyan-900">
+                    Ver página →
                   </span>
                 </a>
 
@@ -657,7 +688,7 @@ export default function LandingQuironValles() {
 
             <div className="mt-8 flex flex-wrap justify-center gap-4">
               <a
-                href="https://www.quironsalud.com/valles/es/cita-medica#r!/n!/29?dir=next"
+                href={quironAppointmentUrl}
                 className="rounded-2xl bg-white px-6 py-3 text-sm font-semibold text-cyan-900 shadow-sm transition hover:opacity-90"
               >
                 Pedir cita online
